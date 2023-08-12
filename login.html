@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Moneywise</title>
+    <link href="style.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="Moneywise/icon.ico" />
+  </head>
+  <header class="header">
+    <img class="logo" src="./Logo.jpeg" alt="" width="100" height="100" />
+    <div class="login-singup">
+      <span>
+        <a href="signup.html" class="logsing">Sing up</a>
+      </span>
+      <span>
+        <a href="login.html" class="logsing">Login</a>
+      </span>
+    </div>
+  </header>
+  <script>
+    function compareText() {
+      var text1 = document.getElementById("username").value;
+      var text2 = document.getElementById("password").value;
+
+      if (text1 === "Saidivit" && text2 === "240406") {
+        window.open("hackathon.html", "_self");
+      } else if (text1 === "Arjun" && text2 === "987654") {
+        window.open("hackathon.html", "_self");
+      } else if (text1 === "vedant" && text2 === "12345678") {
+        window.open("hackathon.html", "_self");
+      } else if (text1 === "Laksh" && text2 === "246810") {
+        window.open("hackathon.html", "_self");
+      } else if (text1 === "Kanhav" && text2 === "97531") {
+        window.open("hackathon.html", "_self");
+      } else {
+        alert("Invalid username or password.");
+      }
+    }
+  </script>
+  <main>
+    <div class="singup-filds">
+      <p class="title">Login</p>
+      <p class="singup-filds-items">Enter your usarname</p>
+      <input
+        type="text"
+        placeholder="Username"
+        class="singup-filds-items"
+        id="username"
+      />
+      <p class="singup-filds-items">Enter your password</p>
+      <input
+        type="password"
+        placeholder="Password"
+        class="singup-filds-items"
+        id="password"
+      />
+      <p></p>
+      <button onclick="compareText()">Login</button>
+    </div>
+  </main>
+</html>

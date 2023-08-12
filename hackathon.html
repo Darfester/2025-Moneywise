@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Moneywise</title>
+    <style>
+      .logsing:link,
+      .logsing:visited {
+        color: #a8a29e;
+        text-decoration: none;
+        margin-left: 12px;
+      }
+
+      .logsing:hover,
+      .logsing:active {
+        color: #3fb9d3;
+      }
+
+      body {
+        margin: 0;
+        padding: 12px;
+        font-family: Arial, sans-serif;
+        background-color: white;
+      }
+
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: white;
+      }
+
+      .course-button {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 20px;
+        padding: 50px;
+      }
+
+      .course-buttons {
+        padding: 80px 30px;
+        background-color: #3fb9d3;
+        color: #ffffff;
+        border: none;
+        font-size: 20px;
+        cursor: pointer;
+        border: none;
+        border-radius: 5px;
+      }
+
+      .course-buttons:hover {
+        padding: 80px 30px;
+        background-color: #ffffff;
+        color: #3fb9d3;
+        border: none;
+        font-size: 20px;
+        cursor: pointer;
+        border: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease, color 0.3s ease;
+      }
+
+      .container {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+      }
+
+      .cal-button {
+        padding: 80px 30px;
+        background-color: #3fb9d3;
+        color: #ffffff;
+        border: none;
+        border-radius: 5px;
+        font-size: 20px;
+      }
+
+      .cal-button:hover {
+        padding: 80px 30px;
+        background-color: #ffffff;
+        color: #3fb9d3;
+        border: none;
+        border-radius: 5px;
+        font-size: 20px;
+        transition: background-color 0.3s ease, color 0.3s ease;
+      }
+
+      .cal {
+        display: grid;
+        padding: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img class="logo" src="./Logo.jpeg" alt="" width="100" height="100" />
+      <div class="login-signup">
+        <span>
+          <a href="welcome page.html" class="logsing">Log out</a>
+        </span>
+      </div>
+    </header>
+    <div class="container">
+      <aside class="cal">
+        <button onclick="openWebsitecal()" class="cal-button">
+          Keep track of your bugdet
+        </button>
+        <script>
+          function openWebsitecal() {
+            window.open("budgetcalc.html", "_self");
+          }
+        </script>
+      </aside>
+      <sector class="course-button">
+        <button onclick="openWebsiteBudgeting()" class="course-buttons">
+          Budgeting and expense tracking
+        </button>
+        <script>
+          function openWebsiteBudgeting() {
+            window.open("webpage 1.html", "_self");
+          }
+        </script>
+        <button onclick="openWebsitebanking()" class="course-buttons">
+          online banking and digital payments
+        </button>
+        <script>
+          function openWebsitebanking() {
+            window.open("webpage 2.html", "_self");
+          }
+        </script>
+        <button onclick="openWebsitesecurity()" class="course-buttons">
+          cyber security and fraud prevention
+        </button>
+        <script>
+          function openWebsitesecurity() {
+            window.open("webpage 3.html", "_self");
+          }
+        </script>
+        <button onclick="openWebsitenvestment()" class="course-buttons">
+          investment basics
+        </button>
+        <script>
+          function openWebsitenvestment() {
+            window.open("webpage 4.html", "_self");
+          }
+        </script>
+        <button onclick="openWebsitecredit()" class="course-buttons">
+          credit and debt management
+        </button>
+        <script>
+          function openWebsitecredit() {
+            window.open("webpage 5.html", "_self");
+          }
+        </script>
+        <button onclick="openWebsitetax()" class="course-buttons">
+          digital tax
+        </button>
+        <script>
+          function openWebsitetax() {
+            window.open("webpage 6.html", "_self");
+          }
+        </script>
+      </sector>
+    </div>
+  </body>
+</html>

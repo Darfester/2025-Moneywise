@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Moneywise</title>
+    <link href="style.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="Moneywise/icon.ico" />
+  </head>
+  <header class="header">
+    <img class="logo" src="./Logo.jpeg" alt="" width="100" height="100" />
+    <div class="login-singup">
+      <span>
+        <a href="hackathon.html" class="logsing">Sing up</a>
+      </span>
+      <span>
+        <a href="hackathon.html" class="logsing">Login</a>
+      </span>
+    </div>
+  </header>
+  <main>
+    <div class="singup-filds">
+      <p class="title">Signup</p>
+      <p class="singup-filds-items">Enter your first name</p>
+      <input type="text" placeholder="First name" class="singup-filds-items" />
+      <p class="singup-filds-items">Enter your lasr name</p>
+      <input type="text" placeholder="Last name" class="singup-filds-items" />
+      <p class="singup-filds-items">Enter your usarname</p>
+      <input type="text" placeholder="Username" class="singup-filds-items" />
+      <p class="singup-filds-items">Enter your password</p>
+      <input
+        type="password"
+        placeholder="Password"
+        class="singup-filds-items"
+      />
+      <p class="singup-filds-items">Re-enter your password</p>
+      <input
+        type="password"
+        placeholder="Password"
+        class="singup-filds-items"
+      />
+      <p></p>
+      <button onclick="openWebsitesign()">Sign up</button>
+      <script>
+        function openWebsitesign() {
+          window.open("hackathon.html", "_self");
+        }
+      </script>
+    </div>
+  </main>
+</html>
